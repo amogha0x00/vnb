@@ -1,0 +1,69 @@
+<!Doctype html> 
+
+<html lang="en">
+
+<head>
+    <meta /charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>V_N_B</title>
+    <style>
+        body {
+            background-color:#080808;
+        }
+       #div-left{
+            float: left;
+        }
+       #div-right{
+            float: right;
+        }
+        h2 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+        pre {
+            color: #FFFFFF; 
+            font-size: 20px;
+        }
+        a {
+            color: #00CD00;
+        }
+        code {
+            color: #FFFFFF;
+            background-color:grey
+        }
+    </style>
+</head>
+
+<body>
+    
+<div id="div-right">   
+<pre>Just download install.sh file and run
+<code>./install.sh
+</code></pre>
+<h2>OR Do it manually</h2><br>
+<h2>For Android Rules</h2><br>    
+
+<pre>Move to downloaded directory
+<code>sudo cp 51-android.rules /etc/udev/rules.d/
+</code>
+then
+<code>sudo udevadm control --reload
+sudo service udev restart
+</code></pre>
+</div>
+
+<div id="div-left">
+    <h2><a href="https://github.com/Warowlet/vnb/">Here's my repository if you like</a></h2><br>
+    
+    <h2><a href="/vnb/install.sh">install.sh script</a></h2><br>
+    
+    <h2><a href="/vnb/bashrc">Bashrc file</a></h2><br>
+    
+    <h2><a href="/vnb/vimrc">Vimrc file</a></h2><br>
+    
+    <h2><a href="/vnb/51-android.rules">51-android.rules file</a></h2><br>
+</div> 
+
+</body>
+
+</html>
