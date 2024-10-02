@@ -1,6 +1,3 @@
-alias update='sudo apt update' 
-alias upgrade='sudo apt upgrade' 
-alias full='sudo dnf update && sudo dnf upgrade' 
 alias df='df -h'
 alias du='du -h'
 alias backupre='adb shell bmgr backupnow appdata'
