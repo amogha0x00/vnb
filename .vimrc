@@ -1,8 +1,11 @@
 au BufNewFile * silent! 0r $HOME/.vim/templates/%:e.skeleton
 au BufRead,BufNewFile *.ipy setlocal filetype=python
+au BufRead,BufNewFile .aliasrc setlocal filetype=sh
+au BufRead,BufNewFile .setsrc setlocal filetype=sh
+
 "au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 "au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
-"set fileformat=unix
+set fileformat=unix
 syntax on
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
@@ -47,3 +50,5 @@ inoremap " ""<Esc>i
 inoremap ' ''<Esc>i
 inoremap <C-j> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
 inoremap <C-k> <Esc>?[)}"'\]>]<CR>:nohl<CR>a
+nnoremap gf <C-W>gf
+vnoremap gf <C-W>gf
