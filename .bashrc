@@ -24,5 +24,6 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-source .aliasrc
-source .setsrc
+source home/$USER/.prompt
+source home/$USER/.aliasrc
+source home/$USER/.setsrc
