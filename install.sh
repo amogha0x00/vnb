@@ -9,4 +9,4 @@ if [ -d "vnb" ];then
         exit 1
     fi
 fi
-git clone "https://github.com/amogha0x00/vnb.git" && cd vnb && ( (cp -v .bashrc ~/.bashrc && cp -v .aliasrc ~/.aliasrc && cp -v .setsrc ~/.setsrc) ; cp -v .vimrc ~/.vimrc ; sudo cp -v 51-android.rules /etc/udev/rules.d/ && (sudo udevadm control --reload ; sudo service udev restart))
+git clone "https://github.com/amogha0x00/vnb.git" && cd vnb && ( (cp -v .bashrc ~/.bashrc && cp -v .aliasrc ~/.aliasrc && cp -v .prompt ~/.prompt && cp -v .setsrc ~/.setsrc) ; cp -v .vimrc ~/.vimrc ; sudo cp -v 51-android.rules /etc/udev/rules.d/ && (sudo udevadm control --reload ; sudo service udev restart))
